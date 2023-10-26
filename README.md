@@ -19,26 +19,60 @@ O back-end é uma aplicação Node.js que permite aos usuários cadastrar inform
 - Implementação de testes automatizados com o Jest.
 - Implantação do serviço na plataforma Render.
 
-## Front-End:
+## 🔐Requisições:
+### Sessions:
+``POST / Create`` (Criação de um novo token Jwt que será necessário para as requisições):  
+> {  
+  >&nbsp;&nbsp;"email": "seu_email",  
+   &nbsp;&nbsp;"password": "sua_senha"  
+}  
 
-O front-end é desenvolvido em React.js e Styled-components, seguindo um design fornecido pelo Figma. As principais características do front-end incluem:
+### Users:  
+``PATCH / Avatar:``  
+> *Recebe a imagem do avatar que será salva no banco*  
 
-- Páginas para autenticação, como sign-in e sign-up.
-- Páginas para visualização de filmes, incluindo detalhes, criação de novos filmes e perfil do usuário.
-- Reutilização de código por meio do uso extensivo de componentes React.
-- Navegação entre páginas gerenciada pelo react-router-dom.
-- Estilização modular com Styled-components.
-- Integração com a API back-end para recuperar e exibir informações sobre os filmes.
-- Implantação do site no Netlify.
+``POST / Create`` (Criação de usuários):  
+> {  
+  &nbsp;&nbsp;"name": "seu_nome",  
+  &nbsp;&nbsp;"email": "seu_email",  
+  &nbsp;&nbsp;"password": "sua_senha"  
+}  
+
+``PUT / Update`` (Atualiza dados do usuário):  
+> {  
+  &nbsp;&nbsp;"name": "novo_nome",  
+  &nbsp;&nbsp;"email": "novo_email",  
+  &nbsp;&nbsp;"password": "nova_senha",  
+  &nbsp;&nbsp;"old_password": "senha_antiga"  
+}  
+
+### Notes:  
+``GET / Index`` (Retorna notas referentes a title):  
+> *Queries: Title.*  
+
+``DELETE / Delete`` (Deleta uma nota):  
+> *Recebe o ID da nota por meio do route params.*  
+
+``GET / Read`` (Retorna a nota e as suas tags):  
+> *Recebe o ID da nota por meio do route params.*  
+
+``POST / Create`` (Cria uma nova nota):  
+> {  
+  &nbsp;&nbsp;"title": "jegarne",  
+  &nbsp;&nbsp;"description": "Massa",  
+  &nbsp;&nbsp;"rating": 6,  
+  &nbsp;&nbsp;"tags": ["Pamonha", "raimundo"]  
+}  
+
+### Tags:  
+``GET / Index:``  
+> *Retorna as tags que foram criadas nas notas pelo usuário.*  
+
+### Files:  
+``GET / ?`` (Recebe o nome da imagem cadastrada no banco e a retorna):    
+> *Recebe o nome da imagem por meio do route params.*  
 
 ## ✔️ Tecnologias Utilizadas
-
-### Front-End:
-
-- ``React``: Biblioteca JavaScript para a criação de interfaces de usuário interativas.
-- ``React Router``: Gerenciamento de rotas no aplicativo.
-- ``Styled-components``: Estilização modular e reutilizável.
-- ``Axios``: Biblioteca para fazer requisições à API.
 
 ### Back-End (Tecnologias comuns em projetos Node.js):
 
