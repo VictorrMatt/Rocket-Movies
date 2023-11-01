@@ -1,45 +1,25 @@
-# 🚀 Food Explorer
+# 🚀 Rocket Movies
+![image](https://github.com/VictorrMatt/Rocket-Movies-Web/assets/98140122/d1722c5e-7973-4ad6-9a2f-74738dbb55d2)
+
 
 ### 🔨 Visão Geral
 
-*O projeto "Food Explorer" é uma iniciativa que visa criar um sistema de cardápio digital para estabelecimentos de alimentação. Baseado no conhecimento adquirido durante o curso Explorer oferecido pela plataforma de ensino Rocketseat, o projeto será composto por duas partes essenciais: o back-end e o front-end.*
-
-**Descrição do Projeto:**
-
-*O "Food Explorer" é uma solução desenvolvida para aprimorar a experiência dos clientes em restaurantes, lanchonetes e estabelecimentos similares, tornando o processo de escolha de pratos mais simples e prático.*
-
-**Funcionalidades para os Clientes:**
-
-- ``Cadastro de Clientes:`` *Os clientes têm a possibilidade de criar contas pessoais, permitindo uma experiência personalizada e a retenção de informações sobre seus pedidos anteriores.*
-- ``Visualização do Cardápio:`` *Os clientes podem navegar facilmente pelo cardápio digital, onde encontrarão informações detalhadas sobre os pratos, incluindo descrições, preços e imagens.*
-
-**Funcionalidades para o Administrador:**
-
-- ``Cadastro de Pratos:`` *Os administradores têm a capacidade de adicionar novos pratos ao cardápio, especificando informações como nome, descrição, preço e a opção de anexar imagens ilustrativas.*
-- ``Atualização de Pratos:`` *É possível realizar atualizações no cardápio, permitindo ao administrador ajustar preços, descrições ou outras informações conforme necessário.*
-- ``Exclusão de Pratos:`` *Pratos que não estejam mais disponíveis podem ser removidos do cardápio.*
-
-**Benefícios Esperados:**
-
-- ``Melhoria da Experiência do Cliente:`` *O "Food Explorer" simplifica o processo de pedido, oferecendo aos clientes uma visão completa do cardápio e a capacidade de personalização.*
-- ``Eficiência Operacional:`` *Para os estabelecimentos, a plataforma simplifica a gestão do cardápio, permitindo atualizações em tempo real.*
-- ``Redução de Uso de Papel:`` *Contribui para a redução do desperdício de papel, uma vez que o cardápio é digital.*
+"Rocket Movies" é um projeto desenvolvido após os módulos 08 e 09 do curso Explorer, oferecido pela plataforma de ensino Rocketseat. Este projeto consiste em duas partes complementares: o back-end e o front-end.
 
 ## Back-End:
 
-O back-end é uma aplicação Node.js que permite aos usuários cadastrar informações sobre pratos. Os recursos do back-end incluem:
+O back-end é uma aplicação Node.js que permite aos usuários cadastrar informações sobre filmes. Os recursos do back-end incluem:
 
-- Criação, leitura, atualização e exclusão de informações de pratos.
+- Criação, leitura, atualização e exclusão de informações de filmes.
 - Autenticação de usuários com geração e validação de tokens JWT (JSON Web Tokens) para garantir a segurança das rotas e dados sensíveis.
-- Gerenciamento de usuários, incluindo apenas o cadastro. futuramente atualização de informações.
+- Gerenciamento de usuários, incluindo o cadastro e atualização de informações.
 - Utilização do Express para roteamento de requisições HTTP.
 - Uso do Knex para automatizar comandos DDL no banco de dados.
-- Suporte ao upload de imagens dos pratos com Multer.
+- Suporte ao upload de imagens de perfil dos usuários com Multer.
+- Implementação de testes automatizados com o Jest.
 - Implantação do serviço na plataforma Render.
 
 ## 🔐Requisições:
-![Requisições](https://github.com/VictorrMatt/Rocket-Movies-Api/assets/98140122/b5e6dd8b-3cb5-4aca-a28f-0334d069d272)
-
 ### Sessions:
 ``POST / Create`` (Criação de um novo token Jwt que será necessário para as requisições):  
 > {  
@@ -105,9 +85,9 @@ O back-end é uma aplicação Node.js que permite aos usuários cadastrar inform
 
 ### 📝 Resumo
 
-*"Food Explorer" é um projeto completo que consiste em uma aplicação de gerenciamento de pratos, composta por um back-end desenvolvido em Node.js e um front-end construído em React.js e Styled-components. O projeto oferece recursos de autenticação, gerenciamento de usuários e pratos, segurança, e armazenamento de informações. "Food Explorer" é uma solução eficaz para armazenar e gerenciar informações sobre pratos, e é resultado do curso Explorer da Rocketseat.*
+*"Rocket Movies" é um projeto completo que consiste em uma aplicação de gerenciamento de informações de filmes, composta por um back-end desenvolvido em Node.js e um front-end construído em React.js e Styled-components. O projeto oferece recursos de autenticação, gerenciamento de usuários e filmes, segurança, e armazenamento de informações. "Rocket Movies" é uma solução eficaz para armazenar e gerenciar informações sobre filmes, e é resultado do curso Explorer da Rocketseat.*
 
-Para acessar o site do "Food Explorer", você pode [clicar aqui](https://github.com/VictorrMatt).
+Para acessar o site do "Rocket Movies", você pode [clicar aqui](https://rocketmoovies.netlify.app/).
 
 ## 🤝Desenvolvedores
 <table align="center">
